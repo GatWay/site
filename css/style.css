@@ -7,6 +7,10 @@
     animation: pzdc 6.5s ease-in-out infinite, color 2s ease-in-out infinite;
 }
 
+:hover {
+    animation-play-state: paused;
+}
+
 a {
     cursor: pointer;
 }
