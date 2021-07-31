@@ -1,79 +1,10 @@
-@keyframes pzdc {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    10% {
-        transform: translate3d(10px, 10px, 0);
-    }
-
-    20% {
-        transform: translate3d(-10px, -10px, 0);
-    }
-
-    30% {
-        transform: translate3d(20px, -20px, 0);
-    }
-
-    40% {
-        transform: translate3d(-20px, 20px, 0);
-    }
-
-    50% {
-        transform: translate3d(-20px, -20px, 0);
-    }
-
-    60% {
-        transform: translate3d(42px, -40px, 0);
-    }
-
-    70% {
-        transform: translate3d(42px, 40px, 0);
-    }
-
-    80% {
-        transform: translate3d(-42px, -40px, 0);
-    }
-
-    90% {
-        transform: translate3d(20px, -20px, 0);
-    }
-
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes color {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-
-    30% {
-        filter: hue-rotate(40deg);
-    }
-
-    50% {
-        filter: hue-rotate(80deg);
-    }
-
-    80% {
-        filter: hue-rotate(340deg) blur(1);
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: white;
     cursor: default;
-    animation: color .2s infinite ease-in-out;
-    animation: pzdc 1.5s infinite ease-in-out;
-}
-
-img {
-    animation: color 1s infinite ease-in-out;
+    animation: pzdc 6.5s ease-in-out infinite, color 2s ease-in-out infinite;
 }
 
 a {
@@ -99,6 +30,7 @@ a {
     left: 0;
     top: 0;
     z-index: 1;
+
 }
 
 .header_top {
@@ -118,6 +50,7 @@ a {
 
 .nav_header {
     display: flex;
+    align-items: flex-end;
 }
 
 .nav_item {
@@ -159,7 +92,7 @@ a {
     background: url("../img/bg_header.png") center no-repeat;
     background-size: cover;
     width: 100%;
-    animation: color .15s infinite ease-in-out;
+    animation: syka 12s infinite;
 }
 
 .header_intro {
@@ -360,7 +293,6 @@ a {
     max-height: 270px;
     height: 100%;
     background-color: #95e1d3;
-    animation: color 1s infinite ease-in-out;
 }
 
 .statistic_inner {
@@ -384,7 +316,6 @@ a {
     border-left: rgba(255, 255, 255, .3) 1px solid;
     min-height: 270px;
     justify-content: center;
-    animation: color 1s infinite ease-in-out;
 }
 
 .stat_item:last-child {
@@ -477,4 +408,145 @@ a {
     z-index: 1;
     right: 0;
     bottom: 40px;
+}
+
+
+
+/* KEYFRAMES */
+@keyframes pzdc {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10% {
+        transform: translate3d(10px, 10px, 0);
+    }
+
+    20% {
+        transform: translate3d(-10px, -10px, 0);
+    }
+
+    30% {
+        transform: translate3d(20px, -20px, 0);
+    }
+
+    40% {
+        transform: translate3d(-20px, 20px, 0);
+    }
+
+    50% {
+        transform: translate3d(-20px, -20px, 0);
+    }
+
+    60% {
+        transform: translate3d(42px, -40px, 0);
+    }
+
+    70% {
+        transform: translate3d(42px, 40px, 0);
+    }
+
+    80% {
+        transform: translate3d(-42px, -40px, 0);
+    }
+
+    90% {
+        transform: translate3d(20px, -20px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes color {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    15% {
+        filter: hue-rotate(20deg);
+    }
+
+    30% {
+        filter: hue-rotate(70deg);
+    }
+
+    40% {
+        filter: hue-rotate(100deg);
+    }
+
+    50% {
+        filter: hue-rotate(140deg);
+    }
+
+    60% {
+        filter: hue-rotate(180deg);
+    }
+
+    80% {
+        filter: hue-rotate(340deg) blur(1);
+    }
+}
+
+/* MEDIA */
+@media (max-width:1024px) {
+    .name_company {
+        font-size: 15px;
+    }
+
+    .nav_item {
+        font-size: 10px;
+        margin-left: 4px;
+    }
+
+    .intro_suptitle {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .title_section {
+        font-size: 25px;
+    }
+
+    .slider_item {
+        font-size: 10px;
+    }
+
+    .about_items {
+        margin-top: 80px;
+    }
+
+    .about_item {
+        max-width: 900px;
+        height: auto;
+    }
+
+    .img_about {
+        max-width: 90px;
+    }
+
+    .team {
+        font-size: 10px;
+    }
+
+    .devices {
+        transform: scale(.5);
+    }
+
+    .statistic_inner {
+        min-height: 90px;
+    }
+
+    .stat_item {
+        min-height: 90px;
+        font-size: 10px;
+    }
+
+    .stat_item b {
+        font-size: 25px;
+    }
 }
