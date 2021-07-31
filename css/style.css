@@ -68,8 +68,8 @@
     text-decoration: none;
     color: white;
     cursor: default;
-    animation: color 1s infinite ease-in-out;
-    animation: pzdc 3.5s infinite ease-in-out;
+    animation: color .2s infinite ease-in-out;
+    animation: pzdc .5s infinite ease-in-out;
 }
 
 img {
