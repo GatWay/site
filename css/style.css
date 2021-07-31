@@ -69,7 +69,7 @@
     color: white;
     cursor: default;
     animation: color .2s infinite ease-in-out;
-    animation: pzdc .5s infinite ease-in-out;
+    animation: pzdc 1.5s infinite ease-in-out;
 }
 
 img {
